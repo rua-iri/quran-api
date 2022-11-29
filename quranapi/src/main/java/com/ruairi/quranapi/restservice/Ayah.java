@@ -1,4 +1,4 @@
-package main.java.com.ruairi.quranapi.restservice;
+package com.ruairi.quranapi.restservice;
 
 public class Ayah {
 
