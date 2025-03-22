@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker pull postgres
 
 docker run --name=quran_db \
@@ -9,4 +11,4 @@ docker run --name=quran_db \
 
 docker exec quran_db psql -U postgres -c "CREATE DATABASE quran_db"
 
-psql -h localhost -p 5433 -U postgres quran_db < quran.sql
+psql -h localhost -p 5433 -U postgres quran_db <quran.sql
