@@ -28,6 +28,7 @@ SET default_with_oids = false;
 --
 
 CREATE TABLE quran (
+    id serial PRIMARY KEY,
     surah integer,
     ayah integer,
     ayah_text text,
@@ -6522,8 +6523,8 @@ COPY quran (surah, ayah, ayah_text, ayah_text_no_diacratic, hash, hizb, page, pa
 -- Name: quran quran_pkey19; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY quran
-    ADD CONSTRAINT quran_pkey19 PRIMARY KEY (index);
+-- ALTER TABLE ONLY quran
+--     ADD CONSTRAINT quran_pkey19 PRIMARY KEY (index);
 
 
 -- Completed on 2019-08-07 00:45:07
