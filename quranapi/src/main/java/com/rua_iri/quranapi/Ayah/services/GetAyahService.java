@@ -9,6 +9,7 @@ import com.rua_iri.quranapi.Query;
 import com.rua_iri.quranapi.Ayah.AyahRepository;
 import com.rua_iri.quranapi.Ayah.Model.Ayah;
 import com.rua_iri.quranapi.Ayah.Model.AyahDTO;
+import com.rua_iri.quranapi.exceptions.AyahNotFoundException;
 
 @Service
 public class GetAyahService implements Query<Integer, AyahDTO> {
@@ -28,7 +29,7 @@ public class GetAyahService implements Query<Integer, AyahDTO> {
             return ResponseEntity.ok(new AyahDTO(ayahOptional.get()));
         }
 
-        return null;
+        throw new AyahNotFoundException();
 
     }
 
