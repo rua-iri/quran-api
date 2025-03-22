@@ -1,4 +1,4 @@
-package com.ruairi.quranapi;
+package com.rua_iri.quranapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

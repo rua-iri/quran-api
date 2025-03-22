@@ -1,4 +1,4 @@
-package com.ruairi.quranapi;
+package com.rua_iri.quranapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
