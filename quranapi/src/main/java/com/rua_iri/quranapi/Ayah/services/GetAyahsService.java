@@ -24,7 +24,9 @@ public class GetAyahsService implements Query<Void, List<AyahDTO>> {
     public ResponseEntity<List<AyahDTO>> execute(Void input) {
 
         List<Ayah> ayahs = ayahRepository.findAll();
-        List<AyahDTO> ayahDTOs = ayahs.stream().map(AyahDTO::new).toList();
+        List<AyahDTO> ayahDTOs = ayahs.stream()
+                .map(AyahDTO::new)
+                .toList();
 
         return ResponseEntity.status(HttpStatus.OK).body(ayahDTOs);
     }
