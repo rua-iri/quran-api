@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.rua_iri.quranapi.Query;
 import com.rua_iri.quranapi.Ayah.AyahRepository;
 import com.rua_iri.quranapi.Ayah.Model.AyahDTO;
-import com.rua_iri.quranapi.exceptions.AyahNotFoundException;
+import com.rua_iri.quranapi.exceptions.SurahNotFoundException;
 
 @Service
 public class GetSurahService implements Query<Integer, List<AyahDTO>> {
@@ -31,7 +31,7 @@ public class GetSurahService implements Query<Integer, List<AyahDTO>> {
             return ResponseEntity.ok(ayahList);
         }
 
-        throw new AyahNotFoundException();
+        throw new SurahNotFoundException();
     }
 
 }
