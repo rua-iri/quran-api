@@ -21,7 +21,7 @@ public class GetSurahsService implements Query<Integer, List<SurahDTO>> {
     @Override
     public ResponseEntity<List<SurahDTO>> execute(Integer input) {
 
-        List<SurahDTO> surahList = ayahRepository.findAll()
+        List<SurahDTO> surahList = ayahRepository.findAllDistinctSurahs()
                 .stream()
                 .map(SurahDTO::new)
                 .toList();

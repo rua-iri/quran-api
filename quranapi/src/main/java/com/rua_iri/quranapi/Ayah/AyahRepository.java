@@ -16,4 +16,8 @@ public interface AyahRepository extends JpaRepository<Ayah, Integer> {
 
     @Query("SELECT a FROM Ayah a WHERE a.ayah_text_no_diacratic LIKE %:substring%")
     List<Ayah> findByAyahTextNoDiacraticContaining(@Param("substring") String substring);
+
+    @Query(value = "SELECT DISTINCT ON (q.surah) * FROM quran q ORDER BY q.surah, q.id", nativeQuery = true)
+    List<Ayah> findAllDistinctSurahs();
+
 }
