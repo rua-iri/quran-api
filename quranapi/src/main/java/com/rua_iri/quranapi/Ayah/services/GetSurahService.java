@@ -28,9 +28,7 @@ public class GetSurahService implements Query<Integer, List<AyahDTO>> {
                 .toList();
 
         if (ayahList.size() > 0) {
-
             return ResponseEntity.ok(ayahList);
-
         }
 
         throw new AyahNotFoundException();
