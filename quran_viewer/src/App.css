@@ -8,10 +8,6 @@
   @apply border border-red-500;
 }
 
-.btn {
-  @apply cursor-pointer
-}
-
 
 .loading-icon {
   animation: spinElement;

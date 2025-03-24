@@ -15,7 +15,7 @@ export default function DashboardHeader() {
               <MagnifyingGlassCircleIcon className={iconClasses} />
             </a>
             <button
-              className="mx-3 btn"
+              className="mx-3 cursor-pointer"
               onClick={() => alert("Info Button Clicked")}
             >
               <InformationCircleIcon className={iconClasses} />

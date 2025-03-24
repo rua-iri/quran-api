@@ -1,7 +1,7 @@
 export default function ListItem({ content, surahNum }) {
   return (
     <a href={`/surah/${surahNum}`}>
-      <div className="my-3 outline outline-slate-400 w-52 rounded hover:bg-amber-100">
+      <div className="my-3 outline outline-slate-400 w-52 rounded hover:bg-amber-100 hover:opacity-75">
         {content}
       </div>
     </a>
