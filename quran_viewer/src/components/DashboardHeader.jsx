@@ -5,22 +5,23 @@ export default function DashboardHeader() {
   const iconClasses = "h-8 w-8";
 
   return (
-    <>
       <div className="border-b border-b-slate-500">
-        <div className="text-start flex justify-between mx-10 my-8">
+        <div className="text-start flex justify-between px-10 py-8">
           <a href="/">
             <h1 className="text-2xl font-bold">Quran Viewer</h1>
           </a>
-          <div>
-            <button className="mx-3">
+          <div className="flex">
+            <a href="/search" className="mx-3">
               <MagnifyingGlassCircleIcon className={iconClasses} />
-            </button>
-            <button className="mx-3">
+            </a>
+            <button
+              className="mx-3 btn"
+              onClick={() => alert("Info Button Clicked")}
+            >
               <InformationCircleIcon className={iconClasses} />
             </button>
           </div>
         </div>
       </div>
-    </>
   );
 }
