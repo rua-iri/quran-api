@@ -18,7 +18,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/surah/:pid" element={<SurahDetail />} />
         </Route>
         <Route path="/search" element={<Dashboard />}>
-          <Route path="/search" element={<Search />} /> 
+          <Route path="/search" element={<Search />} />
         </Route>
       </Routes>
     </BrowserRouter>
